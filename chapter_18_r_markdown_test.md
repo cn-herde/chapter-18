@@ -14,4 +14,3 @@ This is my first test sentence - I assume this will be displayed well.
 
 # Most important people
 Kitty of course
-But don't forget Baby Helena Greta
