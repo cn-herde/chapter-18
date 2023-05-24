@@ -15,3 +15,6 @@ This is my first test sentence - I assume this will be displayed well.
 plot(pressure)
 
 ```
+
+# Most important people
+Kitty of course
