@@ -1,0 +1,90 @@
+employee;organization;training;training_type;learning_hours
+1;Umbrella;Say no;Communication;1
+1;Umbrella;Giving negative feedback;Communication;0,5
+1;Umbrella;Public speaking;Communication;5
+1;Umbrella;Excel for Excellence;Office Package;3
+1;Umbrella;Power Point like a Pro;Office Package;6
+1;Umbrella;Word for Weirdos;Office Package;4
+1;Umbrella;EBIT;Business figures;3
+1;Umbrella;Return on Investment;Business figures;5
+1;Umbrella;Operative Cashflow;Business figures;2
+2;Umbrella;Giving negative feedback;Communication;0,5
+2;Umbrella;EBIT;Business figures;3
+2;Umbrella;Return on Investment;Business figures;5
+3;Umbrella;Say no;Communication;1
+3;Umbrella;Giving negative feedback;Communication;0,5
+3;Umbrella;Public speaking;Communication;5
+4;Umbrella;Giving negative feedback;Communication;0,5
+4;Umbrella;Word for Weirdos;Office Package;4
+4;Umbrella;Operative Cashflow;Business figures;2
+5;Umbrella;Excel for Excellence;Office Package;3
+5;Umbrella;Power Point like a Pro;Office Package;6
+5;Umbrella;Word for Weirdos;Office Package;4
+5;Umbrella;EBIT;Business figures;3
+5;Umbrella;Return on Investment;Business figures;5
+5;Umbrella;Operative Cashflow;Business figures;2
+6;Umbrella;Excel for Excellence;Office Package;3
+6;Umbrella;Power Point like a Pro;Office Package;6
+6;Umbrella;Word for Weirdos;Office Package;4
+7;Fireflies;Say no;Communication;1
+7;Fireflies;Giving negative feedback;Communication;0,5
+7;Fireflies;Public speaking;Communication;5
+7;Fireflies;Excel for Excellence;Office Package;3
+7;Fireflies;Power Point like a Pro;Office Package;6
+7;Fireflies;Word for Weirdos;Office Package;4
+7;Fireflies;EBIT;Business figures;3
+7;Fireflies;Return on Investment;Business figures;5
+7;Fireflies;Operative Cashflow;Business figures;2
+8;Fireflies;Giving negative feedback;Communication;0,5
+8;Fireflies;Public speaking;Communication;5
+8;Fireflies;Excel for Excellence;Office Package;3
+8;Fireflies;Power Point like a Pro;Office Package;6
+8;Fireflies;Word for Weirdos;Office Package;4
+8;Fireflies;EBIT;Business figures;3
+8;Fireflies;Return on Investment;Business figures;5
+8;Fireflies;Operative Cashflow;Business figures;2
+9;Fireflies;Giving negative feedback;Communication;0,5
+9;Fireflies;Public speaking;Communication;5
+9;Fireflies;Excel for Excellence;Office Package;3
+9;Fireflies;Power Point like a Pro;Office Package;6
+9;Fireflies;Word for Weirdos;Office Package;4
+9;Fireflies;EBIT;Business figures;3
+9;Fireflies;Return on Investment;Business figures;5
+9;Fireflies;Operative Cashflow;Business figures;2
+10;Fireflies;Giving negative feedback;Communication;0,5
+10;Fireflies;Public speaking;Communication;5
+10;Fireflies;Excel for Excellence;Office Package;3
+10;Fireflies;Power Point like a Pro;Office Package;6
+10;Fireflies;Word for Weirdos;Office Package;4
+10;Fireflies;EBIT;Business figures;3
+10;Fireflies;Return on Investment;Business figures;5
+10;Fireflies;Operative Cashflow;Business figures;2
+11;Fireflies;Giving negative feedback;Communication;0,5
+11;Fireflies;Public speaking;Communication;5
+11;Fireflies;Excel for Excellence;Office Package;3
+11;Fireflies;Power Point like a Pro;Office Package;6
+11;Fireflies;Word for Weirdos;Office Package;4
+11;Fireflies;EBIT;Business figures;3
+11;Fireflies;Return on Investment;Business figures;5
+11;Fireflies;Operative Cashflow;Business figures;2
+12;Fireflies;Giving negative feedback;Communication;0,5
+12;Fireflies;Public speaking;Communication;5
+12;Fireflies;Excel for Excellence;Office Package;3
+12;Fireflies;Power Point like a Pro;Office Package;6
+12;Fireflies;Word for Weirdos;Office Package;4
+12;Fireflies;EBIT;Business figures;3
+12;Fireflies;Return on Investment;Business figures;5
+12;Fireflies;Operative Cashflow;Business figures;2
+13;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+14;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+15;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+16;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+17;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+18;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+19;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+20;Nathan Drake Corporation;Excel for Excellence;Office Package;3
+21;Nathan Drake Corporation;Say no;Communication;1
+22;Nathan Drake Corporation;Say no;Communication;1
+23;Nathan Drake Corporation;Say no;Communication;1
+24;Nathan Drake Corporation;Say no;Communication;1
+25;Nathan Drake Corporation;Say no;Communication;1
