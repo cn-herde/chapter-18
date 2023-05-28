@@ -27,13 +27,147 @@ learning_data <- read_csv2("fake_learning_data.csv",
 ```
 
 
-
-
-
-Column {data-width=650}
+Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart A
+### Total Learning Hours
+
+```{r}
+
+# create a chart that shows total training hours by company
+## need to aggregate to company 
+
+by_organization <- group_by(learning_data,
+                       organization)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_organization <- summarise(by_organization,
+                                                   total = sum(learning_hours,
+                                                               na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+# get total number of training hours
+total_hours <- 172 + 87 + 29
+
+valueBox(total_hours, 
+         icon = "fa-pencil",
+         color = "blue")
+# one can also set conditions so that the color will depend on the value
+
+
+```
+
+### Average Training Hours per Employee
+```{r}
+
+# create a gauge that shows total training hours by company
+## need to aggregate to company 
+
+by_employee <- group_by(learning_data,
+                       employee)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_employee <- summarise(by_employee,
+                                                   total = mean(learning_hours,
+                                                               na.rm = TRUE))
+
+average_hours <- mean(table_total_training_hours_by_employee$total)
+
+# create gauge
+gauge(average_hours, min = 0, max = 5, symbol = 'Ø', gaugeSectors(
+  success = c(4, 5), warning = c(2.1, 3), danger = c(0, 2)
+))
+
+
+```
+
+### Learning Hours by Organization
+
+```{r}
+
+# create a chart that shows total training hours by company
+## need to aggregate to company 
+
+by_organization <- group_by(learning_data,
+                       organization)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_organization <- summarise(by_organization,
+                                                   total = sum(learning_hours,
+                                                               na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+## create horizontal bar plot
+
+plot_1 <- ggplot(table_total_training_hours_by_organization,
+                 aes(x = reorder(organization, total),
+                     y = total)) +
+  geom_col() +
+  coord_flip()
+
+plot_2 <- plot_1 +
+    labs(x = "Organization",
+           y = "Total learning hours")
+
+plot_2
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Total Learning Hours
+
+```{r}
+
+# create a chart that shows total training hours by company
+## need to aggregate to company 
+
+by_organization <- group_by(learning_data,
+                       organization)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_organization <- summarise(by_organization,
+                                                   total = sum(learning_hours,
+                                                               na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+# get total number of training hours
+total_hours <- 172 + 87 + 29
+
+valueBox(total_hours, 
+         icon = "fa-pencil",
+         color = "orange")
+# one can also set conditions so that the color will depend on the value
+
+
+```
+
+### Average Training Hours per Employee
+```{r}
+
+# create a gauge that shows total training hours by company
+## need to aggregate to company 
+
+by_employee <- group_by(learning_data,
+                       employee)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_employee <- summarise(by_employee,
+                                                   total = mean(learning_hours,
+                                                               na.rm = TRUE))
+
+average_hours <- mean(table_total_training_hours_by_employee$total)
+
+# create gauge
+gauge(average_hours, min = 0, max = 5, symbol = 'Ø', gaugeSectors(
+  success = c(4, 5), warning = c(2.1, 3), danger = c(0, 2)
+))
+
+
+```
+
+### Learning Hours by Organization
 
 ```{r}
 
@@ -76,18 +210,99 @@ plot_2
 
 ```
 
+
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Total Learning Hours
 
 ```{r}
 
+# create a chart that shows total training hours by company
+## need to aggregate to company 
+
+by_organization <- group_by(learning_data,
+                       organization)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_organization <- summarise(by_organization,
+                                                   total = sum(learning_hours,
+                                                               na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+# get total number of training hours
+total_hours <- 172 + 87 + 29
+
+valueBox(total_hours, 
+         icon = "fa-pencil",
+         color = "green") 
+# one can also set conditions so that the color will depend on the value
+
 ```
 
-### Chart C
+### Average Training Hours per Employee
+```{r}
+
+# create a gauge that shows total training hours by company
+## need to aggregate to company 
+
+by_employee <- group_by(learning_data,
+                       employee)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_employee <- summarise(by_employee,
+                                                   total = mean(learning_hours,
+                                                               na.rm = TRUE))
+
+average_hours <- mean(table_total_training_hours_by_employee$total)
+
+# create gauge
+gauge(average_hours, min = 0, max = 5, symbol = 'Ø', gaugeSectors(
+  success = c(4, 5), warning = c(2.1, 3), danger = c(0, 2)
+))
+
+
+```
+
+### Learning Hours by Organization
 
 ```{r}
 
-```
+# create a chart that shows total training hours by company
+## need to aggregate to company 
 
+by_organization <- group_by(learning_data,
+                       organization)
+
+# get total training hours by organization, then arrange by number
+table_total_training_hours_by_organization <- summarise(by_organization,
+                                                   total = sum(learning_hours,
+                                                               na.rm = TRUE)) %>%
+  arrange(desc(total))
+
+## create horizontal bar plot
+
+plot_1 <- ggplot(table_total_training_hours_by_organization,
+                 aes(x = reorder(organization, total),
+                     y = total)) +
+  geom_col() +
+  coord_flip()
+
+plot_2 <- plot_1 +
+    labs(x = "Organization", 
+       y = "Total learning hours")
+
+plot_2
+
+# further improvements:
+## put values into bars
+## color the bars
+## remove axis scales
+## remove gray background
+## put y-axis at top instead of bottom
+## Put title to the very top left
+
+
+
+
+```
