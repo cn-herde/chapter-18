@@ -130,6 +130,9 @@ plot_type_2
 Column {data-width=350}
 -----------------------------------------------------------------------
 
+### Umbrella
+This column shows data for the company "Umbrella".
+
 ### Total Learning Hours
 
 ```{r}
@@ -150,7 +153,7 @@ table_total_training_hours_by_organization <- summarise(by_organization,
 total_hours <- 172 + 87 + 29
 
 valueBox(total_hours, 
-         icon = "fa-pencil",
+         icon = "fa-graduation-cap",
          color = "blue")
 # one can also set conditions so that the color will depend on the value
 
@@ -216,6 +219,9 @@ plot_2
 Column {data-width=350}
 -----------------------------------------------------------------------
 
+### Fireflies
+This column shows data for the company "Fireflies".
+
 ### Total Learning Hours
 
 ```{r}
@@ -236,12 +242,13 @@ table_total_training_hours_by_organization <- summarise(by_organization,
 total_hours <- 172 + 87 + 29
 
 valueBox(total_hours, 
-         icon = "fa-pencil",
+         icon = "fa-graduation-cap",
          color = "orange")
 # one can also set conditions so that the color will depend on the value
 
 
 ```
+
 
 ### Average Training Hours per Employee
 ```{r}
@@ -314,6 +321,9 @@ plot_2
 Column {data-width=350}
 -----------------------------------------------------------------------
 
+### Nathan Drake Corporation
+This column shows data for the company "Nathan Drake Corporation".
+
 ### Total Learning Hours
 
 ```{r}
@@ -334,7 +344,7 @@ table_total_training_hours_by_organization <- summarise(by_organization,
 total_hours <- 172 + 87 + 29
 
 valueBox(total_hours, 
-         icon = "fa-pencil",
+         icon = "fa-graduation-cap",
          color = "green") 
 # one can also set conditions so that the color will depend on the value
 
