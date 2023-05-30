@@ -28,6 +28,17 @@ learning_data <- read_csv2("fake_learning_data.csv",
 
 # Total Overview {data-icon="fa-sitemap"}
 
+Column {data-width=120}
+-----------------------------------------------------------------------
+
+### How to Read this Dashboard
+
+This is a basic example for a dashboard.
+It shows exemplary learning data for an international organization.
+The first page ("Corporate Overview") provides insights about learning within the full corporate environment.
+The second page ("Results by Company") provides the same information but broken down separately for each company.
+
+
 Column {data-width=350}
 -----------------------------------------------------------------------
 
