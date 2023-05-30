@@ -28,35 +28,20 @@ learning_data <- read_csv2("fake_learning_data.csv",
 
 # Total Overview {data-icon="fa-sitemap"}
 
-Column {data-width=120}
------------------------------------------------------------------------
+## Column 1 {data-width="100"}
 
-### How to Read this Dashboard
+### How to Read this Dashboard  
 
 This is a basic example for a dashboard.
 It shows exemplary learning data for an international organization.
 The first page ("Corporate Overview") provides insights about learning within the full corporate environment.
 The second page ("Results by Company") provides the same information but broken down separately for each company.
 
+## Column 2 {data-width="300"}
 
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Total Learning Hours
+### Total Learning Hours {data-height="350"}
 
 ```{r}
-
-# create a chart that shows total training hours by company
-## need to aggregate to company 
-
-by_organization <- group_by(learning_data,
-                       organization)
-
-# get total training hours by organization, then arrange by number
-table_total_training_hours_by_organization <- summarise(by_organization,
-                                                   total = sum(learning_hours,
-                                                               na.rm = TRUE)) %>%
-  arrange(desc(total))
 
 # get total number of training hours
 total_hours <- 172 + 87 + 29
@@ -64,12 +49,11 @@ total_hours <- 172 + 87 + 29
 valueBox(total_hours, 
          icon = "fa-pencil",
          color = "blue")
-# one can also set conditions so that the color will depend on the value
-
 
 ```
 
-### Average Training Hours per Employee
+### Average Training Hours per Employee {data-height="350"}
+
 ```{r}
 
 # create a gauge that shows total training hours by company
@@ -93,7 +77,7 @@ gauge(average_hours, min = 0, max = 5, symbol = 'Ø', gaugeSectors(
 
 ```
 
-### Learning Hours by Training Type
+### Learning Hours by Training Type {data-height="350"}
 
 ```{r}
 # create a chart that shows total training hours by training type
@@ -125,10 +109,10 @@ plot_type_2
 ```
 
 
+
 # Results by Company {data-icon="fa-building"}
 
-Column {data-width=350}
------------------------------------------------------------------------
+## Column 1 {data-width=350}
 
 ### Umbrella
 This column shows data for the company "Umbrella".
@@ -150,9 +134,9 @@ table_total_training_hours_by_organization <- summarise(by_organization,
   arrange(desc(total))
 
 # get total number of training hours
-total_hours <- 172 + 87 + 29
+total_hours_umbrella <- 87
 
-valueBox(total_hours, 
+valueBox(total_hours_umbrella, 
          icon = "fa-graduation-cap",
          color = "blue")
 # one can also set conditions so that the color will depend on the value
@@ -216,8 +200,7 @@ plot_2
 ```
 
 
-Column {data-width=350}
------------------------------------------------------------------------
+## Column 2 {data-width=350}
 
 ### Fireflies
 This column shows data for the company "Fireflies".
@@ -239,9 +222,9 @@ table_total_training_hours_by_organization <- summarise(by_organization,
   arrange(desc(total))
 
 # get total number of training hours
-total_hours <- 172 + 87 + 29
+total_hours_fire <- 172
 
-valueBox(total_hours, 
+valueBox(total_hours_fire, 
          icon = "fa-graduation-cap",
          color = "orange")
 # one can also set conditions so that the color will depend on the value
@@ -318,8 +301,7 @@ plot_2
 ```
 
 
-Column {data-width=350}
------------------------------------------------------------------------
+## Column 3 {data-width=350}
 
 ### Nathan Drake Corporation
 This column shows data for the company "Nathan Drake Corporation".
@@ -341,9 +323,9 @@ table_total_training_hours_by_organization <- summarise(by_organization,
   arrange(desc(total))
 
 # get total number of training hours
-total_hours <- 172 + 87 + 29
+total_hours_drake <- 29
 
-valueBox(total_hours, 
+valueBox(total_hours_drake, 
          icon = "fa-graduation-cap",
          color = "green") 
 # one can also set conditions so that the color will depend on the value
@@ -403,16 +385,5 @@ plot_2 <- plot_1 +
        y = "Total learning hours")
 
 plot_2
-
-# further improvements:
-## put values into bars
-## color the bars
-## remove axis scales
-## remove gray background
-## put y-axis at top instead of bottom
-## Put title to the very top left
-
-
-
 
 ```
